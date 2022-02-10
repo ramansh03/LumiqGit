@@ -1,9 +1,7 @@
-def sum(a,b):
-    return a+b
+def fact(num):
+    if(num==0 or num == 1):
+        return 1
+    else:
+        return num * fact(num-1)
 
-def multiply(a,b):
-    return a*b
-
-
-print(sum(3,4))
-print(multiply(5,6))
+print(fact(5))
