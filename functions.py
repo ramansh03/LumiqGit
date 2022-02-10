@@ -1,9 +1,12 @@
-def sum(a,b):
-    return a+b
+def gcd(a,b):
+    if(a==b):
+        return a
+    elif(a==1 or b==1):
+        return 1
+    else:
+        if(a>b):
+            return gcd(a-b,b)
+        else:
+            return gcd(a,b-a)
 
-def multiply(a,b):
-    return a*b
-
-
-print(sum(3,4))
-print(multiply(5,6))
+print(gcd(3,1))
